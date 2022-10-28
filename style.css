@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+
+--blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--mainBG: hsl(217, 54%, 11%);
+--cardBG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--mainBG);
+    position: relative;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main {
+    background-color: var(--cardBG);
+    width: 325px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    box-shadow: 0px 10px 30px;
+}
+
+.image {
+    height: 280px;
+    border-radius: 5px;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image img {
+    display: none;
+    padding: 200px;
+    background-color: hsla(178, 100%, 50%, 0.7);
+}
+
+.image:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.image:hover > img {
+    display: block;
+}
+
+.text {
+    padding: 30px 0 0 0;
+}
+
+.text h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.text h1:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.text p {
+    color: var(--blue);
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.variables {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.cost {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.cost img {
+    margin-right: 0.2em;
+}
+
+.cost p {
+    color: var(--cyan);
+}
+
+.daysLeft {
+    display: flex;
+    align-items: center;
+}
+
+.daysLeft img {
+    margin-right: 0.2em;
+}
+
+hr {
+    color: var(--line);
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+margin-top: 1em;
+}
+
+.creation img {
+    width: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.creation p {
+    align-items;
+}
+
+.creation a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 0.2em;
+}
+
+.creation a:hover {
+    color: var(--cyan);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+    left: 0;
+}
+
+.attribution a {
+    font-size: 1em;
+}
+
+@media (min-width:800px){
+    main {
+        width: 350px;
+    }
+}
