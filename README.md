@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/FrontendMentor-Lecap/NFT-Preview-Card-Component-Main]
+- Live Site URL: [https://frontendmentor-lecap.github.io/NFT-Preview-Card-Component-Main/]
 
 ## My process
 
@@ -42,26 +42,34 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+In this project I learned about `display: flex` and image positioning in the background of a `<DIV>` and also as a `:hover` state. It was really important to understand how the background image works and how to position it. In this specific case I used the main image as the background with a background size of cover:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+.image {
+    height: 280px;
+    border-radius: 5px;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-size: cover;
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
+And when hovering the `<div>` the image appears with the display:
+
+```css
+.image img {
+  display: none;
+  padding: 200px;
+  background-color: hsla(178, 100%, 50%, 0.7);
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.image:hover > img {
+  display: block;
+}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I have to continue developing in CSS Grid and responsiveness. Also improving HTML semantics to have better accessibility and SEO results.

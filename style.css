@@ -51,7 +51,6 @@ main {
 }
 
 .image:hover {
-    background-color: aliceblue;
     cursor: pointer;
 }
 
