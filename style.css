@@ -92,7 +92,7 @@ main {
 }
 
 .cost img {
-    margin-right: 0.2em;
+    margin-right: 0.3em;
 }
 
 .cost p {
@@ -125,9 +125,7 @@ margin-top: 1em;
     margin-right: 1em;
 }
 
-.creation p {
-    align-items;
-}
+
 
 .creation a {
     text-decoration: none;
@@ -145,6 +143,7 @@ margin-top: 1em;
     bottom: 1%;
     right: 0;
     left: 0;
+    color: var(--line);
 }
 
 .attribution a {
