@@ -39,7 +39,7 @@ button {
     margin: auto;
     border-radius: 5px;
     border: none;
-    background-image:url(/images/image-equilibrium.jpg);
+    background-image:url(./images/image-equilibrium.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
